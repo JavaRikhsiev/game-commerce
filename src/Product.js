@@ -17,6 +17,7 @@ function Product({ id, title, image, cost, ranking }) {
         ranking: ranking,
       },
     });
+    alert("Item is added to the basket!!!");
   };
   return (
     <div className="product">
