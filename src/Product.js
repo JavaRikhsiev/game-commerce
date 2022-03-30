@@ -1,8 +1,10 @@
 import React from "react";
 import "./Product.css";
 import { useStateValue } from "./StateProvider";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-function Product({ id, title, image, cost, ranking }) {
+function Product({ id, title, image, cost, ranking, site }) {
   const [{ basket }, dispatch] = useStateValue();
   //console.log("this is the basket >>> ", basket);
   const addToBasket = () => {
@@ -17,10 +19,14 @@ function Product({ id, title, image, cost, ranking }) {
         ranking: ranking,
       },
     });
-    alert("Item is added to the basket!!!");
+    toast(`${title} is added  to basket`, {
+      position: "bottom-right",
+    });
+    // alert("Item is added to the basket!!!");
   };
   return (
     <div className="product">
+      <ToastContainer />
       <div className="product_info">
         <p>{title}</p>
         <p className="product_cost">
@@ -35,7 +41,9 @@ function Product({ id, title, image, cost, ranking }) {
             ))}
         </div>
       </div>
-      <img src={image} alt="" />
+      <a href={site} target="_blank">
+        <img className="productImage" src={image} alt="" />
+      </a>
       <button onClick={addToBasket}>Add to Basket</button>
     </div>
   );

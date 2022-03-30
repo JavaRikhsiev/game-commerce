@@ -33,7 +33,8 @@
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
 }
-.product > img {
+
+.product  img {
   max-height: 200px;
   width: 100%;
   object-fit: contain;
@@ -41,4 +42,9 @@
 }
 .product_ranking {
   display: flex;
+}
+
+.productImage:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
 }

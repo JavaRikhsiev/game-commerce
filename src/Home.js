@@ -18,6 +18,7 @@ function Home() {
             cost={49.99}
             image="https://cdn.akamai.steamstatic.com/steam/apps/1549180/header.jpg?t=1643051345"
             ranking={5}
+            site="https://www.propnight.com/"
           />
 
           <Product
@@ -26,6 +27,7 @@ function Home() {
             cost={59.99}
             image="https://cs10.pikabu.ru/post_img/big/2018/10/06/0/1538775502134014043.jpg"
             ranking={4}
+            site="https://www.propnight.com/"
           />
         </div>
         <div className="home_row">
