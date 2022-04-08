@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import "./App.css";
 import Header from "./Header";
 import Home from "./Home";
+import NFTHome from "./NFTHome";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Checkout from "./Checkout";
 import Payment from "./Payment";
@@ -68,6 +69,11 @@ function App() {
             <Elements stripe={promise}>
               <Payment />
             </Elements>
+          </Route>
+
+          <Route path="/nft">
+            <Header />
+            <NFTHome />
           </Route>
 
           <Route path="/">

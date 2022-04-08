@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
@@ -6,9 +6,11 @@ import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
 import logo from "./images/logo/logo1.png";
+import logo2 from "./images/logo/LogoNFT.png";
 
 function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
+  const [active, setActive] = useState("home");
   const handleAuthenticaton = () => {
     if (user) {
       auth.signOut();
@@ -17,8 +19,22 @@ function Header() {
 
   return (
     <div className="header">
-      <Link to="/">
+      <Link onClick={() => setActive("home")} to="/">
         <img className="header_logo" src={logo} />
+        <span
+          className={active == "home" ? "header-link active" : "header-link"}
+        >
+          Game
+        </span>
+      </Link>
+
+      <Link onClick={() => setActive("nft")} to="/nft">
+        <img className="nft_logo" src={logo2} />
+        <span
+          className={active == "nft" ? "header-link active" : "header-link"}
+        >
+          NFT
+        </span>
       </Link>
 
       <div className="header_search">

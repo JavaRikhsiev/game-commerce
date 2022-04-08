@@ -1,5 +1,5 @@
 .header {
-  height: 60px;
+  height: 90px;
   display: flex;
   align-items: center;
   background-color: #131921;
@@ -8,12 +8,14 @@
   z-index: 100;
 }
 
-.header_logo {
+.header_logo,
+.nft_logo {
   width: 100px;
   object-fit: contain;
   margin: 0 20px;
   margin-top: 1px;
 }
+
 .header_search {
   display: flex;
   align-items: center;
@@ -23,7 +25,7 @@
 .header_searchIcon {
   padding: 5px;
   height: 22px !important;
-  background-color: #6a8cc7;
+  background-color: goldenrod;
 }
 .header_searchInput {
   height: 12px;
@@ -62,4 +64,26 @@
 .header_BasketCount {
   margin-right: 10px;
   margin-left: 10px;
+}
+
+.header-link {
+  text-decoration: none;
+  color: antiquewhite;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header a {
+  text-decoration: none;
+  position: relative;
+}
+
+.header a:hover .header-link {
+  color: goldenrod;
+}
+
+.header-link.active {
+  color: goldenrod;
 }
