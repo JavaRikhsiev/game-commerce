@@ -61,11 +61,6 @@ function Header() {
         <span className="header_optionLineTwo">Prime</span>
       </div>
 
-      <div className="header_option">
-        <span className="header_optionLineOne">Gaming</span>
-        <span className="header_optionLineTwo">News</span>
-      </div>
-
       <Link to="/orders">
         <div className="header_option">
           <span className="header_optionLineOne">Returns</span>

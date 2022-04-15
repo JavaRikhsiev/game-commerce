@@ -14,6 +14,7 @@ import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
+import Footer from "./Footer";
 
 const promise = loadStripe(
   "pk_test_51KkTC1FPcJsZJgiKEliFd9I2ZZYuj1qRHU7hoObxfDhWgGmCp7VGtsGmgmkXjmRTTqFLvKlFA1AM4BnQmuwUGYNp00Dhb9VG3Z"
@@ -74,11 +75,13 @@ function App() {
           <Route path="/nft">
             <Header />
             <NFTHome />
+            <Footer />
           </Route>
 
           <Route path="/">
             <Header />
             <Home />
+            <Footer />
           </Route>
         </Switch>
       </div>

@@ -6,6 +6,7 @@ function NFTHome() {
   return (
     <div className="home">
       <div className="home_container">
+        <h2 className="title">Welcome to NFT World!</h2>
         <img
           className="home_image"
           src="https://bored.ai/static/media/home-bottom-background.9b453f93.jpg"

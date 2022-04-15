@@ -6,11 +6,13 @@ function Home() {
   return (
     <div className="home">
       <div className="home_container">
+        <h2 className="title">Hello Gamers!</h2>
         <img
           className="home_image"
           src="https://estaticos.megainteresting.com/media/cache/1140x_thumb/uploads/images/gallery/5da5a6c65bafe84e843c986e/diccionario-gaming.jpg"
           alt=""
         />
+
         <div className="home_row">
           <Product
             id="121"
@@ -27,7 +29,7 @@ function Home() {
             cost={59.99}
             image="https://cs10.pikabu.ru/post_img/big/2018/10/06/0/1538775502134014043.jpg"
             ranking={4}
-            site="https://www.propnight.com/"
+            site="https://www.pubgmobile.com/ru/home.shtml"
           />
         </div>
         <div className="home_row">
@@ -37,6 +39,7 @@ function Home() {
             cost={89.99}
             image="https://www.ixbt.com/img/n1/news/2021/8/4/pubg-new-state_large.jpg"
             ranking={5}
+            site="https://newstate.pubg.com/ru"
           />
           <Product
             id="124"
@@ -44,6 +47,7 @@ function Home() {
             cost={29.99}
             image="https://i4.hurimg.com/i/hurriyet/75/750x422/6061ba964e3fe116d4a0ee48.jpg"
             ranking={5}
+            site="https://back4blood.com/ru-ru"
           />
           <Product
             id="125"
@@ -51,15 +55,17 @@ function Home() {
             cost={29.99}
             image="https://cdn.akamai.steamstatic.com/steam/apps/218620/header.jpg?t=1643366577"
             ranking={5}
+            site="https://www.paydaythegame.com/"
           />
         </div>
         <div className="home_row">
           <Product
             id="125"
-            title="The lean startup"
+            title="FIFA 21"
             cost={129.99}
             image="https://cdkeys.cheap/storage/photos/1/Thumbnails/fifa21.png"
             ranking={5}
+            site="https://www.ea.com/ru-ru/games/fifa/fifa-21"
           />
         </div>
       </div>
